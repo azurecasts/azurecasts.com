@@ -14,7 +14,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-
+template.html
 #Jekyll
 /_site
 
