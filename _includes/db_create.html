@@ -1,0 +1,31 @@
+#Recommend to keep these random, but if you need to change go for it
+DB_USER=admin_$RANDOM #set this to whatever you like but it's not something that should be easy
+DB_PASS=$(uuidgen) #Again - whatever you like but keep it safe! Better to make it random
+DB_SERVERNAME=server$RANDOM #this has to be unique across azure
+
+# Create the {{include.server}} service
+echo "Spinning up {{include.server}} $DB_SERVERNAME in group $RG Admin is $DB_USER"
+
+az {{include.server}} server create --resource-group $RG \
+    --name $DB_SERVERNAME --admin-user $DB_USER \
+    --admin-password $DB_PASS --sku-name $DBSKU \
+    --ssl-enforcement Disabled \
+    --location $LOCATION
+
+echo "Guessing your external IP address from ipinfo.io"
+IP=$(curl -s ipinfo.io/ip)
+echo "Your IP is $IP"
+
+# Open up the firewall so we can access
+echo "Popping a hole in firewall for IP address $IP (that's you)"
+az {{include.server}} server firewall-rule create --resource-group $RG \
+        --server $DB_SERVERNAME --name AllowMyIP \
+        --start-ip-address $IP --end-ip-address $IP
+
+#Open up the firewall so wordpress can access - this is internal IP only
+#Be aware that this opens your service to *all* services in this Azure data center
+#Even ones that aren't in your subscription.
+echo "Popping a hole in firewall for Azure services"
+az {{include.server}} server firewall-rule create --resource-group $RG \
+        --server $DB_SERVERNAME --name AllowAzureIP \
+        --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0

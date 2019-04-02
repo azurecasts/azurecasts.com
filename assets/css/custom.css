@@ -1,0 +1,31 @@
+body {
+  background-color:#24237e;
+}
+.navbar{
+  background-color:#178CD4;
+}
+pre :{
+
+}
+code {
+  border-radius: 8px;
+}
+.hljs {
+  padding: 24px;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: "OperatorMono-Book", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+p>code,
+li>code {
+  font-size: 14px;
+  background-color: #e0f7fb;
+  padding: 3px;
+  border: 1px solid #00c3e6;
+  color: #000;
+}

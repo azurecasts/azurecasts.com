@@ -1,0 +1,14 @@
+echo "Creating Web app"
+az webapp create --resource-group $RG \
+                  --plan $APPNAME \
+                  --name $APPNAME \
+                  --deployment-container-image-name "$IMAGE"
+
+echo "Configuring app storage"
+az webapp config container set --resource-group $RG \
+                               --name $APPNAME \
+                               --enable-app-service-storage true
+
+az webapp config appsettings set --name $APPNAME \
+                  --resource-group $RG \
+                  --settings WEBSITES_ENABLE_APP_SERVICE_STORAGE=true

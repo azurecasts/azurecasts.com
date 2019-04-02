@@ -1,0 +1,4 @@
+echo "Creating AppService Plan"
+az appservice plan create --name $APPNAME \
+                          --resource-group $RG \
+                          --sku $SKU
