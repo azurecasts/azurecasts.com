@@ -5,11 +5,11 @@ layout: default
 <div class="container" style="margin-top:80px">
   <div class="row">
     <div class="col-md-12">
-      <div class="row" style="margin-top:80px">
+      <div class="row" style="margin-top:50px;min-height:320px">
         
-        <div class="col-lg-8">
+        <div class="offset-lg-1 col-lg-7">
           <h2 class="title text-center">Little Videos About Azure</h2>
-          <p style="font-size: 150%; line-height: 1.6">
+          <p class="lead">
             AzureCasts are 10-20 minute videos that solve a single problem. We keep things at a brisk pace and as real as we can.
           </p>
           <p>Have some suggestions for us? <a href="https://github.com/azurecasts/azurecasts.com/issues">Let us know</a> by creating an issue in our repo.</p>
@@ -19,67 +19,31 @@ layout: default
         </div>
       </div>
       <div class="row">
+
+        {% for vid in site.videos %}
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-header card-header-image">
-              <a href="#pablo">
-                <img class="img img-raised" src="/assets/img/slides/001.jpg">
+              <a href="{{vid.url}}">
+                <img class="img img-raised" src="/assets/img/slides/{{vid.number}}.jpg">
               </a>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/slides/001.jpg&quot;); opacity: 1;"></div></div>
+            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/slides/{{vid.number}}.jpg&quot;); opacity: 1;"></div></div>
             <div class="card-body">
               <h6 class="category text-info">Node App Services Docker</h6>
               <h4 class="card-title">
-                <a href="#pablo">#001: Kick the tires on Azure by deploying the simplest site possible.</a>
+                <a href="{{vid.url}}">#{{vid.number}}: {{vid.title}}</a>
               </h4>
               <p class="card-description">
-                  In this video, we'll deploy a bare-bones NodeJS app so we can kick the tires on Azure. The code and transcript for this video are available at https://github.com/azurecasts/001-a-simple-plan.
-                <a href="#pablo"> Watch Now </a>
+                {{vid.summary}} 
+                <a href="{{vid.url}}"> Watch Now </a>
+              </p>
+              <p>
+                <i class="fa fa-user"></i> <b>{{vid.author}}</b>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-header card-header-image">
-              <a href="#pablo">
-                <img class="img img-raised" src="/assets/img/slides/002.jpg">
-              </a>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/slides/002.jpg&quot;); opacity: 1;"></div></div>
-            <div class="card-body">
-              <h6 class="category text-success">
-                Node VSCode AppServices
-              </h6>
-              <h4 class="card-title">
-                <a href="#pablo">#002: Deploy a NodeJS site directly from VS Code</a>
-              </h4>
-              <p class="card-description">
-                  In this video we'll deploy the simplest NodeJS website using Azure tooling within VS Code. We'll also fix potential issues along the way.
-                <a href="#pablo"> Watch Now </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-header card-header-image">
-              <a href="#pablo">
-                <img class="img img-raised" src="/assets/img/slides/003.jpg">
-              </a>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/slides/003.jpg&quot;); opacity: 1;"></div></div>
-            <div class="card-body">
-              <h6 class="category text-danger">
-                NodeJS Logging AppServices
-              </h6>
-              <h4 class="card-title">
-                <a href="#pablo">#003: Basic Logging and Continuous Deployment</a>
-              </h4>
-              <p class="card-description">
-                  In this video we'll expand the super simple NodeJS web application from episode #001. We'll plug in the ExpressJS web framework and then setup our deployment to pull from DockerHub whenever an image is updated. To verify that everything is working, we'll setup basic logging.
-                <a href="#pablo"> Watch Now </a>
-              </p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>

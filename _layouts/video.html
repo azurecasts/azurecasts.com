@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="section section-basic">
+  <div class="container" style="margin-top:50px">
+    <h1 class="text-center">{{ page.title }}</h1>
+    <div class="embed-responsive embed-responsive-16by9" style="margin-top:50px">
+      <iframe class="embed-responsive-item" src="{{page.video}}?rel=0" allowfullscreen></iframe>
+    </div>
+    <div class="row" style="margin-top:20px">
+      <div class="col-md-10 ml-auto mr-auto">
+        <h2 class="text-center">
+          Transcript
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 ml-auto mr-auto main main-raised" style="margin-top:30px" id="transcript">
+        <p style="font-weight:normal;color:#000;font-size:1.1.em">
+          {{content}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
