@@ -20,26 +20,40 @@ layout: default
       </div>
       <div class="row">
 
-        {% for vid in site.videos %}
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-header card-header-image">
-              <a href="{{vid.url}}">
-                <img class="img img-raised" src="/assets/img/slides/{{vid.number}}.jpg">
-              </a>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/slides/{{vid.number}}.jpg&quot;); opacity: 1;"></div></div>
-            <div class="card-body">
-              <h6 class="category text-info">Node App Services Docker</h6>
-              <h4 class="card-title">
-                <a href="{{vid.url}}">#{{vid.number}}: {{vid.title}}</a>
-              </h4>
-              <p class="card-description">
-                {{vid.summary}} 
-                <a href="{{vid.url}}"> Watch Now </a>
-              </p>
-              <p>
-                <i class="fa fa-user"></i> <b>{{vid.author}}</b>
-              </p>
+        {% for vid in site.posts %}
+
+        <div class="col-lg-4 col-md-12">
+          <div class="row">
+            <div class="col-lg-12 col-md-6">
+              <div class="card card-blog">
+                <div class="card-header card-header-image">
+                  <a href="{{vid.url}}">
+                    <img class="img" src="/assets/img/slides/{{vid.number}}.jpg">
+                  </a>
+                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/slides/{{vid.number}}.jpg&quot;); opacity: 1;"></div></div>
+                <div class="card-body ">
+                  <h6 class="card-category text-info">
+                    {{vid.tags}}
+                  </h6>
+                  <h4 class="card-title">
+                    <a href="{{vid.url}}">#{{vid.number}}: {{vid.title}}</a>
+                  </h4>
+                  <p class="card-description">
+                    {{vid.summary}} 
+                  </p>
+                </div>
+                <div class="card-footer ">
+                  <div class="author">
+                    <a href="#">
+                      <img src="/assets/img/authors/{{vid.author}}.jpg" alt="{{vid.author}}" class="avatar img-raised">
+                      <span>{{vid.author}}</span>
+                    </a>
+                  </div>
+                  <div class="stats ml-auto">
+                    <i class="material-icons">schedule</i> {{vid.minutes}} minutes
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
