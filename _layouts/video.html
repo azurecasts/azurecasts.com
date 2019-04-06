@@ -8,18 +8,30 @@ layout: default
     <div class="embed-responsive embed-responsive-16by9" style="margin-top:50px">
       <iframe class="embed-responsive-item" src="{{page.video}}?rel=0" allowfullscreen></iframe>
     </div>
-    <div class="row" style="margin-top:20px">
-      <div class="col-md-10 ml-auto mr-auto">
-        <h2 class="text-center">
-          Transcript
-        </h2>
-      </div>
-    </div>
+    {% if page.transcript %}
+    <p style="font-size:120%; padding:20px"><i class="fa fa-book"></i> 
+      <a href="/transcripts/{{page.transcript}}">View the transcript here.</a>
+    </p>
+    {% endif %}
     <div class="row">
-      <div class="col-md-10 ml-auto mr-auto main main-raised" style="margin-top:30px;padding:18px" id="transcript">
+      <div class="col-md-10 ml-auto mr-auto" style="margin-top:30px;padding:18px" id="transcript">
         <p style="font-weight:normal;color:#000;font-size:1.1.em">
           {{content}}
         </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10  ml-auto mr-auto">
+        {% if page.github %}
+        <div class="card">
+          <div class="card-body">
+            <p style="font-size: 120%">
+               <i class="fa fa-github"></i></span> <a href="{{page.github}}" target=_blank>You can view the code for this video here.</a>
+            </p>
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
