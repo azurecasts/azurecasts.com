@@ -13,5 +13,8 @@ In this video we’ll kick the tires on Azure and see if it will work as the pro
 
 I want to start by doing the simplest thing I can think of: deploying the sample code from the Node “Getting Started” guide. I don’t want to deal with dependencies, build processes, or unit tests just yet. I want to do the least possible thing so I can isolate any problems I run into.
 
+## Resources
+
+ - []()
 
 
