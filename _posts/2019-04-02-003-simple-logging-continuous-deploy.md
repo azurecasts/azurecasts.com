@@ -6,7 +6,7 @@ video: https://www.youtube.com/embed/b6lja1Gda9o
 author: Rob Conery
 layout: video
 minutes: "11:44"
-github:
+github: https://github.com/azurecasts/003-basic-logging-container-deployment
 transcript: 003-logging-continuous
 twitter: robconery
 ---
