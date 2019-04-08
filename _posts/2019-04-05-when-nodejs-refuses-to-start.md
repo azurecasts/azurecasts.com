@@ -7,7 +7,7 @@ tags:
 summary: "In this episode Burke Holland uses VS Code and the App Services extension to troubleshoot his NodeJS application, which refuses to start. It worked just a second ago... what gives!"
 video: https://www.youtube.com/embed/tR9l2aTkAkY
 author: Burke Holland
-github: 
+github: https://github.com/azurecasts/004-when-node-refuses-to-start
 minutes: "13:56"
 ---
 
