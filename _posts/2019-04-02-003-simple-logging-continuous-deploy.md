@@ -6,6 +6,8 @@ video: https://www.youtube.com/embed/b6lja1Gda9o
 author: Rob Conery
 layout: video
 minutes: 12
+github:
+transcript: 003-logging-continuous
 ---
 
 ## Resources
