@@ -9,7 +9,7 @@ minutes: "11:44"
 github:
 transcript: 003-logging-continuous
 twitter: robconery
-
+---
 ## Resources
 
 If you want to learn more about the resources in this episode, click below!
