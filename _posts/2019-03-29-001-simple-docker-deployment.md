@@ -5,9 +5,10 @@ summary: In this video, we'll deploy a bare-bones NodeJS app so we can kick the 
 video: https://www.youtube.com/embed/z5Kdrw2KsIg
 author: Rob Conery
 layout: video
-minutes: 14
+minutes: "13:39"
 transcript: 001-simple-node-deploy
 github: https://github.com/azurecasts/001-a-simple-plan
+twitter: robconery
 ---
 
 In this video we’ll kick the tires on Azure and see if it will work as the production home of project I’ll be working on. I don’t have an application just yet, but one is in the planning. 

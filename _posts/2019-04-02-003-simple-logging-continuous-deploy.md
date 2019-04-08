@@ -5,10 +5,10 @@ summary: In this video we'll expand the super simple NodeJS web application from
 video: https://www.youtube.com/embed/b6lja1Gda9o
 author: Rob Conery
 layout: video
-minutes: 12
+minutes: "11:44"
 github:
 transcript: 003-logging-continuous
----
+twitter: robconery
 
 ## Resources
 
