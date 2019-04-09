@@ -10,31 +10,29 @@ layout: default
     </div>
 
     <div class="row">
-        <div class="col-md-12  ml-auto mr-auto">
-          {% if page.github %}
-          <a href="{{page.github}}" class="btn btn-github " target="_blank">
-              <i class="fa fa-github"></i> Get the Code
-             <div class="ripple-container"></div>
-          </a>
-          {% endif %}
-          {% if page.transcript %}
-          <a href="/transcripts/{{page.transcript}}" class="btn btn-facebook ">
-              <i class="fa fa-book"></i> Read the Transcript
-             <div class="ripple-container"></div>
-          </a>
-          {% endif %}
-          {% if page.twitter %}
-          <a href="https://twitter.com/{{page.twitter}}" class="btn btn-twitter " target="_blank">
-              <i class="fa fa-twitter"></i> Tweet @{{page.twitter}}
-             <div class="ripple-container"></div>
-          </a>
-          {% endif %}
-        </div>
+      <div class="col-md-12  ml-auto mr-auto">
+        {% if page.github %}
+        <a href="{{page.github}}" class="btn btn-github " target="_blank">
+            <i class="fa fa-github"></i> Get the Code
+            <div class="ripple-container"></div>
+        </a>
+        {% endif %}
+        {% if page.transcript %}
+        <a href="/transcripts/{{page.transcript}}" class="btn btn-facebook ">
+            <i class="fa fa-book"></i> Read the Transcript
+            <div class="ripple-container"></div>
+        </a>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="https://twitter.com/{{page.twitter}}" class="btn btn-twitter " target="_blank">
+            <i class="fa fa-twitter"></i> Tweet @{{page.twitter}}
+            <div class="ripple-container"></div>
+        </a>
+        {% endif %}
       </div>
     </div>
-
     <div class="row">
-      <div class="col-md-10 ml-auto mr-auto" style="padding:18px" id="transcript">
+      <div class="col-md-12 ml-auto mr-auto" style="padding:18px" id="transcript">
         <p style="font-weight:normal;color:#000;font-size:1.1.em">
           {{content}}
         </p>
