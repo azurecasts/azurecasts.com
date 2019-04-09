@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="/assets/css/material-kit.css?v=2.1.1" rel="stylesheet" />
+  <link href="/assets/css/solarized.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="/assets/demo/demo.css" rel="stylesheet" />
   <link href="/assets/demo/vertical-nav.css" rel="stylesheet" />
@@ -31,58 +32,24 @@
 
   <meta content="{{ site.title }}" property="og:site_name">
 
+  {% if page.title %}<meta content="{{ page.title }}" property="og:title">{% else %}<meta content="{{ site.title }}" property="og:title">{% endif %}
+  {% if page.title %}<meta content="article" property="og:type">
+  {% else %}<meta content="website" property="og:type">{% endif %}{% if page.summary %}<meta content="{{ page.summary }}" property="og:description">{% else %}<meta content="{{ site.description }}" property="og:description">{% endif %}
+  {% if page.url %}<meta content="{{ site.url }}{{ page.url }}" property="og:url">{% endif %}
+  {% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"><meta content="{{ site.url }}/authors/{{page.author | slugify}}" property="article:author">{% endif %}
+  {% if page.title %}<meta content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" property="og:image">{% else %}<meta content="{{site.url}}/assets/img/logo-pink.png" property="og:image">{% endif %}
+  {% if page.categories %}{% for category in page.categories limit:1 %}<meta content="{{ category }}" property="article:section">{% endfor %}{% endif %}
+  {% if page.tags %}{% for tag in page.tags %}<meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}
   {% if page.title %}
-    <meta content="{{ page.title }}" property="og:title">
+  <meta name="twitter:creator" content="@{{page.twitter}}" />
+  <meta name="twitter:text:title" content="{{page.title}}" />
+  <meta name="twitter:image" content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   {% else %}
-    <meta content="{{ site.title }}" property="og:title">
-  {% endif %}
-
-  {% if page.title %}
-    <meta content="article" property="og:type">
-  {% else %}
-    <meta content="website" property="og:type">
-  {% endif %}
-
-  {% if page.summary %}
-    <meta content="{{ page.summary }}" property="og:description">
-  {% else %}
-    <meta content="{{ site.description }}" property="og:description">
-  {% endif %}
-
-  {% if page.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-  {% endif %}
-
-  {% if page.date %}
-    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-    <meta content="{{ site.url }}/authors/{{page.author | slugify}}" property="article:author">
-  {% endif %}
-
-  {% if page.title %}
-    <meta content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" property="og:image">
-  {% else %}
-    <meta content="{{site.url}}/assets/img/logo-pink.png" property="og:image">
-  {% endif %}
-
-  {% if page.categories %}
-    {% for category in page.categories limit:1 %}
-    <meta content="{{ category }}" property="article:section">
-    {% endfor %}
-  {% endif %}
-
-  {% if page.tags %}
-    {% for tag in page.tags %}
-    <meta content="{{ tag }}" property="article:tag">
-    {% endfor %}
-  {% endif %}
-
-  {% if page.title %}
-    <meta name="twitter:creator" content="@{{page.twitter}}" />
-    <meta name="twitter:text:title" content="{{page.title}}" />
-    <meta name="twitter:image" content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-  {% else %}
-  
+  <meta name="twitter:creator" content="@robconery" />
+  <meta name="twitter:text:title" content="{{site.title}}" />
+  <meta name="twitter:image" content="{{site.url}}/assets/img/unicorn.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   {% endif %}
 
 </head>

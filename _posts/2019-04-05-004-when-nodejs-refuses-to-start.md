@@ -9,6 +9,7 @@ video: https://www.youtube.com/embed/tR9l2aTkAkY
 author: Burke Holland
 github: https://github.com/azurecasts/004-when-node-refuses-to-start
 minutes: "13:56"
+transcript: 004-node-start
 twitter: burkeholland
 ---
 
