@@ -1,7 +1,7 @@
 ---
 number: "001"
 title: A Simple Docker Deployment
-summary: In this video, we'll deploy a bare-bones NodeJS app so we can kick the tires on Azure
+summary: In this video we’ll kick the tires on Azure and see if it will work as the production home of project I’ll be working on. I don’t have an application just yet, but one is in the planning. 
 video: https://www.youtube.com/embed/z5Kdrw2KsIg
 author: Rob Conery
 layout: video
