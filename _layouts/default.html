@@ -33,8 +33,8 @@
   <meta content="{{ site.title }}" property="og:site_name">
 
   {% if page.twitter %}<meta content="{{ page.title }}" property="og:title">{% else %}<meta content="{{ site.title }}" property="og:title">{% endif %}
-  {% if page.title %}<meta content="article" property="og:type">
-  {% else %}<meta content="website" property="og:type">{% endif %}{% if page.summary %}<meta content="{{ page.summary }}" property="og:description">{% else %}<meta content="{{ site.description }}" property="og:description">{% endif %}
+  {% if page.twitter %}<meta content="article" property="og:type">{% else %}<meta content="website" property="og:type">{% endif %}
+  {% if page.summary %}<meta content="{{ page.summary }}" property="og:description">{% else %}<meta content="{{ site.description }}" property="og:description">{% endif %}
   {% if page.url %}<meta content="{{ site.url }}{{ page.url }}" property="og:url">{% endif %}
   {% if page.date %}<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time"><meta content="{{ site.url }}/authors/{{page.author | slugify}}" property="article:author">{% endif %}
   {% if page.twitter %}<meta content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" property="og:image">{% else %}<meta content="{{site.url}}/assets/img/card.jpg" property="og:image">{% endif %}
