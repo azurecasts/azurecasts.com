@@ -40,7 +40,7 @@
   {% if page.title %}<meta content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" property="og:image">{% else %}<meta content="{{site.url}}/assets/img/logo-pink.png" property="og:image">{% endif %}
   {% if page.categories %}{% for category in page.categories limit:1 %}<meta content="{{ category }}" property="article:section">{% endfor %}{% endif %}
   {% if page.tags %}{% for tag in page.tags %}<meta content="{{ tag }}" property="article:tag">{% endfor %}{% endif %}
-  {% if page.title %}
+  {% if page.twitter %}
   <meta name="twitter:creator" content="@{{page.twitter}}" />
   <meta name="twitter:text:title" content="{{page.title}}" />
   <meta name="twitter:image" content="{{site.url}}/assets/img/slides/{{page.number}}.jpg" />
@@ -48,7 +48,7 @@
   {% else %}
   <meta name="twitter:creator" content="@robconery" />
   <meta name="twitter:text:title" content="{{site.title}}" />
-  <meta name="twitter:image" content="{{site.url}}/assets/img/unicorn.png" />
+  <meta name="twitter:image" content="{{site.url}}/assets/img/card.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   {% endif %}
 
