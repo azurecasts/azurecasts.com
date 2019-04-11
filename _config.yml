@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: AzureCasts
+title: "AzureCasts | Concise, High Quality Videos About Azure"
 email: robcon@microsoft.com
 description: >- # this means to ignore newlines until "baseurl:"
   AzureCasts are 10-20 minute videos that solve a single problem. We keep things at a brisk pace and as real as we can.
