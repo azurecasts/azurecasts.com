@@ -17,5 +17,5 @@ twitter: burkeholland
 
 You can read more about the Azure resources in this video here:
 
- - [VS Code AppServices Extension](https://code.visualstudio.com/tutorials/app-service-extension/getting-started?WT.mc_id=docs-azurecasts-buhollan)
- - [Create a NodeJS Application on Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-nodejs?WT.mc_id=docs-azurecasts-buhollan)
+ - [VS Code AppServices Extension](https://code.visualstudio.com/tutorials/app-service-extension/getting-started?WT.mc_id=azurecasts-website-buhollan)
+ - [Create a NodeJS Application on Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-nodejs?WT.mc_id=azurecasts-website-buhollan)

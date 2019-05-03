@@ -4,6 +4,7 @@
 
 ### Ruby ###
 *.gem
+.gems
 *.rbc
 /.config
 /coverage/

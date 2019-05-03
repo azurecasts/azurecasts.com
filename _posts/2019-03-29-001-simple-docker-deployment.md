@@ -18,11 +18,11 @@ I want to start by doing the simplest thing I can think of: deploying the sample
 ## Resources
 
  - [The Node Getting Started Guid](https://nodejs.org/es/docs/guides/getting-started-guide/)
- - [The Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=docs-azurecasts-robcon)
+ - [The Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurecasts-website-robcon)
  - [Docker](https://docs.docker.com/)
- - [az webapp](https://docs.microsoft.com/cli/azure/webapp?view=azure-cli-latest&WT.mc_id=docs-azurecasts-robcon)
- - [App Service Pricing](https://azure.microsoft.com/pricing/details/app-service/windows/?WT.mc_id=docs-azurecasts-robcon)
- - [az appservice](https://docs.microsoft.com/cli/azure/appservice?view=azure-cli-latest&WT.mc_id=docs-azurecasts-robcon)
- - [az group](https://docs.microsoft.com/cli/azure/group?view=azure-cli-latest&WT.mc_id=docs-azurecasts-robcon)
+ - [az webapp](https://docs.microsoft.com/cli/azure/webapp?view=azure-cli-latest&WT.mc_id=azurecasts-website-robcon)
+ - [App Service Pricing](https://azure.microsoft.com/pricing/details/app-service/windows/?WT.mc_id=azurecasts-website-robcon)
+ - [az appservice](https://docs.microsoft.com/cli/azure/appservice?view=azure-cli-latest&WT.mc_id=azurecasts-website-robcon)
+ - [az group](https://docs.microsoft.com/cli/azure/group?view=azure-cli-latest&WT.mc_id=azurecasts-website-robcon)
 
 
