@@ -24,4 +24,5 @@ You can read more about the Azure resources in this video here:
  - [PM2](http://pm2.keymetrics.io)
  - [Azure Scaling](https://docs.microsoft.com/en-us/azure/app-service/web-sites-scale?WT.mc_id=azurecasts-website-buhollan)
  - [VS Code Azure Extenstions](https://code.visualstudio.com/docs/azure/extensions?WT.mc_id=azurecasts-website-buhollan)
-
+ - [Design your app to scale out](https://docs.microsoft.com/azure/architecture/guide/design-principles/scale-out?WT.mc_id=azurecasts-website-buhollan)
+ - [Deploying to Azure using AppService](https://code.visualstudio.com/tutorials/app-service-extension/getting-started?WT.mc_id=azurecasts-website-buhollan)
