@@ -19,8 +19,8 @@ Until 2 weeks ago! All of that changed when Scott Guthrie announced a free tier 
 
 ## Resource Links
 
- - [Multi-container App Services](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-multi-container?WT.mc_id=azurecast_008-github-robcon)
- - [Configuring an App Container](https://docs.microsoft.com/en-us/azure/app-service/containers/configure-custom-container?WT.mc_id=azurecast_008-github-robcon)
- - [What is Kudu?](https://azure.microsoft.com/en-us/resources/videos/what-is-kudu-with-david-ebbo?WT.mc_id=azurecast_008-github-robcon)
+ - [Multi-container App Services](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-multi-container?WT.mc_id=docs-azurecasts-robcon)
+ - [Configuring an App Container](https://docs.microsoft.com/en-us/azure/app-service/containers/configure-custom-container?WT.mc_id=docs-azurecasts-robcon)
+ - [What is Kudu?](https://azure.microsoft.com/en-us/resources/videos/what-is-kudu-with-david-ebbo?WT.mc_id=docs-azurecasts-robcon)
  - [AzureCasts on Free Web Apps](https://azurecasts.com/2019/05/03/creating-a-web-app-for-free/)
  - [AzureCasts on Makefiles](https://azurecasts.com/2019/04/11/005-using-make-to-orchestrate-shell-scripts/)

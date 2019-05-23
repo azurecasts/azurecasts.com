@@ -20,5 +20,5 @@ In this video I'll take control of the shell commands that I've been using in ep
 You can read more about the Azure resources in this video here:
 
  - [What the heck is Make?](https://www.youtube.com/watch?v=_r7i5X0rXJk)
- - [The az webapp container command](https://docs.microsoft.com/cli/azure/webapp/config/container?view=azure-cli-latest&WT.mc_id=azurecasts-website-robcon)
- - [Install the CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurecasts-website-robcon)
+ - [The az webapp container command](https://docs.microsoft.com/cli/azure/webapp/config/container?view=azure-cli-latest?WT.mc_id=azurecasts-website-robcon)
+ - [Install the CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest?WT.mc_id=azurecasts-website-robcon)

@@ -20,8 +20,8 @@ In this episode Rob decides to get cheap and pay as little as possible for a hos
 If you want to learn more about the resources in this episode, click below!
 
  - [What the heck is Make?](https://www.youtube.com/watch?v=_r7i5X0rXJk)
- - [Install the CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=docs-azurecasts-robcon)
- - [Creating a Node Web App](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs&WT.mc_id=docs-azurecasts-robcon)
+ - [Install the CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest?WT.mc_id=docs-azurecasts-robcon)
+ - [Creating a Node Web App](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs?WT.mc_id=docs-azurecasts-robcon)
  - [NeDB](https://github.com/louischatriot/nedb)
  - [Project Kudu](https://github.com/projectkudu/kudu)
 
