@@ -4,7 +4,7 @@ title: "Creating a Free Web Site with Elixir and Redis using Docker Compose"
 number: "008" #set this to your episode
 categories:
 tags:
-summary: "In this video Rob shows you how to create a multi-docker web application using Docker Compose - all for Free! We'll create a site using Elixir and then wire it up to Redis, all containerized."
+summary: "In this video Rob shows you how to create a multi-container web application using Docker Compose - all for Free! We'll create a site using Elixir and then wire it up to Redis, all containerized."
 video: https://www.youtube.com/embed/xaTAOWMZEYA
 author: Rob Conery
 github: https://github.com/azurecasts/008-freedom-linux
