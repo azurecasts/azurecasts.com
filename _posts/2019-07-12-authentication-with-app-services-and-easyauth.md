@@ -19,7 +19,7 @@ Yes, yes I know I can "just use Passport" with a Node/Express application, but I
 
 You can read more about the Azure resources in this video here:
 
- - [Material Theme from Creative Time](https://www.creative-tim.com/product/material-kit)
+ - [Material Theme from Creative Tim](https://www.creative-tim.com/product/material-kit)
  - [Authentication and Authorization](https://docs.microsoft.com/en-us/azure/app-service/overview-authentication-authorization?WT.mc_id=azurecasts-website-robcon)
  - [Authentication and Authorization - Advanced Topics](https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-how-to?WT.mc_id=azurecasts-website-robcon)
  - [Setting Up Google](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google?WT.mc_id=azurecasts-website-robcon)
