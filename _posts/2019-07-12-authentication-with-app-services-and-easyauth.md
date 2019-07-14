@@ -5,7 +5,7 @@ number: "010" #set this to your episode
 categories:
 tags:
 summary: "In this episode Rob sets up Azure's Authentication and Authorization service, otherwise known as EasyAuth, using an Express application, Google, and Twitter. Don't want to use an auth service or library? This is for you."
-video: https://www.youtube.com/embed/jP9sXRzdz7o
+video: https://www.youtube.com/embed/2EPvfeIf4u4
 author: Rob Conery
 github: https://github.com/azurecasts/010-easyauth
 transcript: 010-easyauth
