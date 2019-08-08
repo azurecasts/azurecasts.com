@@ -12,7 +12,7 @@ minutes: "14:13"
 twitter: robconery
 ---
 
-Put the long form description of the show here
+In this episode Rob moves his public application image off of Docker Hub in favor of keeping things all together within Azure. We'll create a private container registry, learn how to authenticate with it and then push our code. We'll also use the ACR build task, making Azure build our image for us.
 
 ## Resource Links
 
