@@ -16,3 +16,4 @@ You can run the site by cloning this repo and then running Jekyll locally. This 
 Once that's done you can install the required gems using Make: `make gems`. This will drop the gems into a local directory so everything is nice and tidy.
 
 If this fails or you're on Windows, maybe just use Docker.
+Use docker on mac this will be working good
